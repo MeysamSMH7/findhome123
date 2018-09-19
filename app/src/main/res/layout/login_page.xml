@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ورود"
+        android:background="#4fd0f3"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userlogin"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:hint="نام کاربری"
+        android:background="@drawable/background"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passlogin"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:hint="رمز عبور "
+        android:background="@drawable/background"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ورود"
+            android:id="@+id/btn_login"
+            android:layout_weight="0.5"
+            android:layout_gravity="top" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="انصراف"
+            android:id="@+id/btn_dismis"
+            android:layout_weight="0.5"
+            android:layout_gravity="top" />
+    </LinearLayout>
+
+</LinearLayout>

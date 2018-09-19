@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sam.com.findhome.Main24Activity"
+    android:orientation="vertical">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get data"
+        android:id="@+id/button"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="New Text"
+        android:id="@+id/textViewShowPostS"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_ShowPost"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_1"
+                    android:visibility="visible"
+                    android:background="#da2a2a" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_2"
+                    android:visibility="visible"
+                    android:background="#29e829" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_3"
+                    android:visibility="visible"
+                    android:background="#da2a2a" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_4"
+                    android:visibility="visible"
+                    android:background="#29e829" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_5"
+                    android:visibility="visible"
+                    android:background="#da2a2a" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_6"
+                    android:visibility="visible"
+                    android:background="#29e829" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_7"
+                    android:visibility="visible"
+                    android:background="#da2a2a" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_8"
+                    android:visibility="visible"
+                    android:background="#29e829" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_9"
+                    android:visibility="visible"
+                    android:background="#da2a2a" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/imageViewShowPost_10"
+                    android:visibility="visible"
+                    android:background="#29e829" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

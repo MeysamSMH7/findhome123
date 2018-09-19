@@ -1,0 +1,3338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="test.test.com.myapplication.MainActivity">
+
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTex_matn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="متن" />
+
+                <EditText
+                    android:id="@+id/editText_onvan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="عنوان" />
+
+                <LinearLayout
+                    android:id="@+id/number_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#bfb6b6"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="نوع ملک و معامله" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_noe_dael"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="معامله" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner_noe_melk"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="ملک" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/number_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#6bf272"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="مشخصات اصلی ملک"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <Spinner
+                            android:id="@+id/spinner_noe_bana"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:id="@+id/txtView_noe_bana"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="نوع بنا" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/Find_HoMe_editText_masahat_made"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number" />
+
+                            <TextView
+                                android:id="@+id/txtView_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="وارد کردن مساحت ساخت (زیربنا) الزامی است" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtView_masahat"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="مساحت ساخته شده (مترمربع)" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/Find_HoMe_editText_masahat_ground"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:inputType="number" />
+
+                            <TextView
+                                android:id="@+id/txtView_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="مساحت زیر به متر مربع وارد شود." />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtView_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="مساحت زمین ( مترمربع)" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_mogheitat_build"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hapticFeedbackEnabled="false"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <Spinner
+                            android:id="@+id/spinner7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:id="@+id/txtView_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="موقعیت ساختمان" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <Spinner
+                            android:id="@+id/spinner_num_room"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:id="@+id/txtView_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="تعداد اتاق" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <Spinner
+                            android:id="@+id/spinner_num_parking"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="تعداد پارکینگ" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/Find_HoMe_editText_year_made"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:inputType="number" />
+
+                            <TextView
+                                android:id="@+id/txtView_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="سال ساخت ملک باید مشخصص گردد مثال: 1375" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtView_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="سال ساخت (هجری شمسی)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="نوع واگذاری " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دارای جواز ساخت "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="قابل تجمیع "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="قابل تفکیک "
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Liner_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="نوع واگذاری " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="مالکیت"
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سرقفلی"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/RadioGP2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:visibility="visible">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_NewSAZ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نوساز" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_OldSAz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="چندسال ساخت" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_OLD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="کلنگی" />
+
+                    </RadioGroup>
+
+                    <CheckBox
+                        android:id="@+id/Fine_HoMe_checkBox_reBuild"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="بازسازی شده"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/Fine_HoMe_checkBox_ghabel_live"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="قابل سکونت"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/number_3_rahn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#78f2f7"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="قیمت و شرایط معامله" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/editText_rahnVadie"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="مبلغ ودیعه (تومان)" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="ذکر مبلغ ودیعه الزامی است. مثال: 50,000,000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/editText_rahnEjare"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="مبلغ اجاره ماهیانه (تومان)" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="برای رهن کامل عدد صفر وارد نمایید" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/number_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#78f2f7"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="قیمت و شرایط معامله" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText_price_deal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="قیمت کل فروش (تومان) -میزان وام از این مبلغ کسر نگردد" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="وارد کردن مبلغ نهایی فروش الزامی است. نباید مبلغ وام و یا رهن از این مبلغ کسر گردد. در صورتی که این مبلغ صحیح وارد نشود، آگهی نمایش داده نخواهد شد. مثال: 150,000,000" />
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/Fine_HoMe_checkBox_moaveze"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="معاوضه"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_moaveze"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText_moaveze"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="سقف مبلغ معوضه (تومان)" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:text="حداکثر قیمت ملکی که میخواهید با آن معاوضه نمایید." />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/Fine_HoMe_checkBox_pish_sell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="پیش فروش"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_pish_sell"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText_pish_sell_price"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="مبلغ پیش پرداخت (تومان)" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="مبلغی را که خریدار در هنگام عقد قرارداد به صورت نقدی خواهد پرداخت را وارد نمایید" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText_pish_sell_time"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="زمان تحویل (به ماه)" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="چند ماه دیگر این ملک آماده تحویل خواهد شد. مثال: 18" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <Spinner
+                                        android:id="@+id/spiner_pish_sell_mizan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="میزان ساخت انجام شده" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/Fine_HoMe_checkBox_vam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دارای وام"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_vam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText_vam_mizan"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="میزان وام (تومان)" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="مقدار وام را به تومان وارد نمایید. مثال: 20000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText_vam_sod"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="سود وام (درصد)" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="مقدار سود سالیانه وام به درصد. مثال: 25" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText_vam_num_ghest"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="تعداد اقساط باقیمانده (عدد)" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="میزان اقساط باقی مانده: مثال 36" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText_vam_num_ghest2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="مبلغ هر قسط (تومان)" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="مبلغ هر قسط را به تومان وارد نمایید. مثال: 700000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/Fine_HoMe_checkBox_sell_with_moshtari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="فروش با مستاجر "
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_sell_with_moshtari"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText_sell_with_moshtari"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="مبلغ رهن (تومان)" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="مبلغ را که به عنوان ودیعه از طرف مستاجر در اختیار شماست. مثال: 20000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/number_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="جزییات بیشتر در مورد ملک"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/liner_moghiat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="موقعیت ملک" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number|numberSigned" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtView_8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="ملک واقع در طبقه" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtView_9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="تعداد کل طبقات" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtView_10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="تعداد واحد در هر طبقه" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Find_HoMe_editText4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:inputType="number" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtView_11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="تعداد کل واحدها" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox123"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" واقع در مجتمع مسکونی " />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_emkanat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="امکانات واحد" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="تعداد انباری" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="مساحت کل انباری" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="تعداد بالکن" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="مساحت کل بالکن" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_WC"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="سرویس بهداشتی" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <Spinner
+                                android:id="@+id/spinner_wc_IR"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="ایرانی" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <Spinner
+                                android:id="@+id/spinner_wc_EN"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="فرهنگی" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/liner_bath"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <Spinner
+                                android:id="@+id/spinner_wc_bath"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2" />
+
+                            <TextView
+                                android:id="@+id/txtView_12"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="حمام" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="آبدارخانه" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آبدارخانه" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="غذاخوری" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_kitchen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="آشپزخانه" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دارای آشپزخانه" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آبدارخانه"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="غذاخوری"
+                            android:visibility="gone" />
+
+                        <RadioGroup
+                            android:id="@+id/RadioGP"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone">
+
+                            <RadioButton
+                                android:id="@+id/radioButton_FindHome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="اپن" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton2_FindHome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="نیمه اپن" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton3_FindHome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="بسته" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton4_FindHome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="مشترک" />
+                        </RadioGroup>
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox_have_kabinet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دارای کابینت"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/liner_have_kabinet"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/spinner_have_kabinet_badane"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="بدنه" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/spinner_have_kabinet_roye"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="رویه" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/spinner_have_kabinet_safhe"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:text="صفحه" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox_have_tajhizat_kitchen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="دارای تجیزات آشپزخانه"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/liner_have_tajhizat_kitchen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="در مورد نوع تجهیزات و مارک و مدل آنها توضیح دهید" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="توضیح در مورد تجهیزات آشپزخانه" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_neshiman"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/txtView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="نشیمن و پذیرایی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شومینه" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سقف بالای 4 متر" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox_neshiman_moble"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="مبله" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" قفسه بندی " />
+
+                        <LinearLayout
+                            android:id="@+id/linear_neshiman_mile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="در مورد وسایل و تجهیزاتی مبله توضیح دهید"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_shekl_building"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="شکل ساخت" />
+
+                        <RadioGroup
+                            android:id="@+id/RadioGP3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="visible">
+
+                            <RadioButton
+                                android:id="@+id/radioButton5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="فلت" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="دوبلکس" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="تریبلکس" />
+                        </RadioGroup>
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="پنت هاوس" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_karbari"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="کاربری پیشنهادی" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" مسکونی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" اداری " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" تجاری " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" صنعتی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" تفریحی - ورزشی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" آموزشی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" توریستی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" دامپروری " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" کشاورزی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox88"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" باغشهر - شهرک سازی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox89"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" خدماتی رفاهی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox90"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" انبار " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox91"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" پارکینگ " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox92"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="تابلوخور"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/editText14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:id="@+id/textView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به کاربری های آینده ملک" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_nma"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="نما" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="نورپردازی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کامپوزیت" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شیشه" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="چوب" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سنگ" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سیمان" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آجر" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="تابلوخور"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:id="@+id/txtView_15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات اضافی راجع به نوع نما" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_eskelet_building"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="اسکلت ساختمان" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="بتنی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آجری" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="فلزی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="چوبی" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع اسکلت ساختمان" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_kaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="کف" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سنگ" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سرامیک" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="پارکت" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کفپوش" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="موکت" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="موزاییک" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سیمان" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کف پله دار" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:id="@+id/txtView_16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به نوع کف" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_wall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="دیوار" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سنگ" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="رنگ" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کاشی / سرامیک" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox28"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کاغذ دیواری" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="چوب / دیوار کوب" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="گچ" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="سیمان" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آجر" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به نوع دیوار" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_cold_hot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="تجهیزات سرمایشی گرمایشی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox331"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" کولرگازی/ اسپلیت" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox341"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کولرآبی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox351"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" بخاری " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox361"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" پکیج / رادیاتور " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox371"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" دیگ/ رادیاتور " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox381"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" چیلر / فن کوئل " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox39"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" آبگرمکن خورشیدی " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" هوا ساز " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText151"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به تجهیزات سرمایشی گرمایشی" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_refaii"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="تجهیزات رفاهی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" آسانسور " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" درب پارکینگ ریموت دار " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" شوتینگ زباله " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" آنتن مرکزی " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" اینترنت پر سرعت " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox38"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" شبکه داخلی " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آسانسور حمل بار"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به تجهیزات تجهیزات رفاهی" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_safe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="تجهیزات ایمنی امنیتی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" دزدگیر " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" دوربین مدار بسته " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" آیفون تصویری " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" درب ضد سرقت " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" سیستم اعلام آتش " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" سیستم اطفاء حریق " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="گاو صندوق"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="شیشه نشکن" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به تجهیزات ایمنی و امنیتی" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_dastresi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="دسترسی"
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="داخل بازار "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="بزرگراه "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="خیابان اصلی "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="خیابان فرعی "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="میدان"
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox93"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="کوچه "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox94"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="بن بست "
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/editText22"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به دسترسی ملک" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_emkanat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/txtView_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="امکانات ساختمان"
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox47"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" حیاط خلوت "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" سرایداری "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox49"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" لابی "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" باغ "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" آب نما "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" باربیکیو "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" حیاط "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" فضای سبز "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" نگهبانی "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" سالن اجتماعات "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" آلاچیق "
+                            android:visibility="visible" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox58"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" بام سبز "
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:id="@+id/txtView_14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به امکانات ساختمان" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/liner_ghozar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="عرض گذر اصلی" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/editText13"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:inputType="number" />
+
+                            <TextView
+                                android:id="@+id/txtView_17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="عرض بزرگترین گذر یا خیابان به متر" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_sport"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="امکانات ورزشی" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" استخر " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" سونا " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" جکوزی " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" بیلیارد " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" فوتبال " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" بسکتبال " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" والیبال " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox66"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" تنیس " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox67"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" پینگ پنگ " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox68"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" سالن بدن سازی " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox69"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" زمین بازی کودکان " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox70"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" اسکواش " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به امکانات ورزشی" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="دید و منظر" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" شهر " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" اتوبان " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox73"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" خیابان " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox74"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" کوچه " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox75"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" دریا " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox76"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" جنگل " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox77"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" کوه " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox78"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" باغ " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="توضیحات تکمیلی راجع به دید و منظر" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_NEWS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="نورگیری" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox79"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" شمال " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox80"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" جنوب " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" شرق " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox82"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" غرب " />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="تاسیسات" />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox83"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" آب شهری " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox84"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" برق " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox85"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" گاز " />
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox86"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" ژنراتور برق " />
+
+                        <CheckBox
+                            android:id="@+id/checkBox10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="منبع تغذیه برق" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox95"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="آب چاه"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/liner_phone2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <Spinner
+                                android:id="@+id/spinner_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="خط تلفن" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_sanad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="مشخصات سند" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <Spinner
+                                android:id="@+id/spinner_dong"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="میزان مالکیت" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <Spinner
+                                android:id="@+id/spinner_noe_malekati"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:text="نوع مالکیت" />
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/Fine_HoMe_checkBox87"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" سند در دست اقدام " />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_more_tozih"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="توضیحات کامل در مورد ملک" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText20"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2"
+                                    android:inputType="text" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="در مورد مزایای ملک بیشتر توضیح دهید." />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="در این قسمت در مورد مزایای ملک توضیح دهید، برای مثال: نورگیر، نزدیک به مترو، محله آرام، بازسازی شده، دارای تجهیزات آشپزخانه، نقشه ساخت خوب، دارای کمد دیواری بزرگ، دارای پارکینگ مهمان، سقف بلند و ... " />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="آدرس و موقعیت ملک" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/Find_HoMe_editText21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="درج آدرس پستی ملک تا سرحد خیابان فرعی و یا کوچه الزامی است (مثال: میدان رز - خیابان مریم - کوچه سوم). از درج آدرس آژانس مسکن و یا کروکی خودداری نمایید." />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="موقعیت جغرافیایی ملک مهمترین عامل تعیین کننده قیمت ملک است. به همین دلیل درج آدرس صحیح ملک تا حد کوچه و یا خیابان فرعی، الزامی است." />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/number_5_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_1"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_2"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_3"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_4"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_5"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_6"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_7"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_8"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_9"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgTakePic_10"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1" />
+
+                        <Button
+                            android:id="@+id/takePic_finhome_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:text="عکس" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="برچسب ( با , جدا شود یا با رفتن به خط بعد)" />
+
+                <EditText
+                    android:id="@+id/barchasbEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="برچسب" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/button123123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ثبت" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal">
+
+                    <!--
+                                        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:map="http://schemas.android.com/apk/res-auto"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:id="@+id/map123123"
+                                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            tools:context="sam.com.findhome.Main2Activity" />
+                    -->
+
+
+                    <TextView
+                        android:id="@+id/txtMap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="اطلاعات منتشر کننده"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="نام و نام خانوادگی"
+                        android:id="@+id/NameFamily"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="محل سکونت"
+                        android:id="@+id/MahaleLive" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="رایانامه"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/Email"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="شماره"
+                        android:inputType="number"
+                        android:id="@+id/PhoneNumber"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MMMMMMMMMMMMMMMMMMMM"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
